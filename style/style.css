@@ -379,9 +379,10 @@ button[primary-github]:hover {
   align-items: center;
   padding: 24px;
   gap: 16px;
-  width: 208px;
+  width: 256px;
   height: 224px;
-  top: 0px;
+  top: 0;
+  left: 0;
   color: var(--font-color);
 
   img {
@@ -389,7 +390,9 @@ button[primary-github]:hover {
   }
 }
 
-.qrcode:hover {
+.qrcode:hover,
+.qrcode:focus,
+.qrcode:active {
   /* transform: scale(1,1); */
   opacity: 1;
   top: 0px;
