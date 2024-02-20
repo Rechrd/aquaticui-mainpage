@@ -177,7 +177,7 @@
         window.addEventListener("wheel", (event) => {
             event.preventDefault();
             container.scrollLeft += event.deltaY;
-        });
+        }, { passive: false });
     </script>
 </body>
 
