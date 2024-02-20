@@ -65,3 +65,9 @@ body {
     overflow: clip;
     touch-action: none;
 }
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0 0 32px 0;
+    }
+}
