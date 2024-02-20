@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: CJSBold;
     src: url(./fonts/ChillJinshuSongBold.woff);
@@ -12,62 +13,63 @@
     font-family: MiSans;
     src: url(./fonts/MiSans.ttf);
 }
+*/
 
 @media (prefers-color-scheme: dark) {
-    :root {
-        background-color: #091220;
+  :root {
+    background-color: #091220;
 
-        --theme-primary-hover: #4181e7;
-        --skii-primary-hover: #df6800;
-        --bili-primary-hover: #dd6285;
-        --wanwen-primary-hover: #e4a546;
-        --github-primary: #FFFFFF;
-        --github-primary-hover: #ccced3;
-        --card-bg: rgba(26, 27, 28, 0.9);
-        --card-bg-hover: rgb(26, 27, 28);
-        --scrollbar-bg: rgba(255, 255, 255, 0.5);
-        --font-color: #FFFFFF;
-        --btn-sec-bg: rgba(255, 255, 255, 0.25);
-        --btn-sec-hover-bg: rgba(255, 255, 255, 0.3);
-    }
+    --theme-primary-hover: #4181e7;
+    --skii-primary-hover: #df6800;
+    --bili-primary-hover: #dd6285;
+    --wanwen-primary-hover: #e4a546;
+    --github-primary: #ffffff;
+    --github-primary-hover: #ccced3;
+    --card-bg: rgba(26, 27, 28, 0.9);
+    --card-bg-hover: rgb(26, 27, 28);
+    --scrollbar-bg: rgba(255, 255, 255, 0.5);
+    --font-color: #ffffff;
+    --btn-sec-bg: rgba(255, 255, 255, 0.25);
+    --btn-sec-hover-bg: rgba(255, 255, 255, 0.3);
+  }
 }
 
 @media (prefers-color-scheme: light) {
-    :root {
-        background-color: #F2F4FA;
+  :root {
+    background-color: #f2f4fa;
 
-        --theme-primary-hover: #75aaff;
-        --skii-primary-hover: #ffa657;
-        --bili-primary-hover: #ff92b1;
-        --wanwen-primary-hover: #ffd493;
-        --github-primary: #211D1F;
-        --github-primary-hover: #4A4849;
-        --card-bg: rgba(255, 255, 255, 0.9);
-        --card-bg-hover: rgb(255, 255, 255);
-        --font-color: #1d1d1d;
-        --btn-sec-bg: rgba(0, 0, 0, 0.15);
-        --btn-sec-hover-bg: rgba(0, 0, 0, 0.2);
-        --scrollbar-bg: rgba(26, 27, 28, 0.6);
-    }
+    --theme-primary-hover: #75aaff;
+    --skii-primary-hover: #ffa657;
+    --bili-primary-hover: #ff92b1;
+    --wanwen-primary-hover: #ffd493;
+    --github-primary: #211d1f;
+    --github-primary-hover: #4a4849;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-bg-hover: rgb(255, 255, 255);
+    --font-color: #1d1d1d;
+    --btn-sec-bg: rgba(0, 0, 0, 0.15);
+    --btn-sec-hover-bg: rgba(0, 0, 0, 0.2);
+    --scrollbar-bg: rgba(26, 27, 28, 0.6);
+  }
 }
 
 :root {
-    --theme-primary: #4E92FF;
-    --bili-primary: #FB7299;
-    --scrollbar-bg-hover: rgba(78, 146, 255, 0.6);
-    --github-primary-btn: #494949;
-    --github-primary-btn-hover: #3a3939;
-    user-select: none;
+  --theme-primary: #4e92ff;
+  --bili-primary: #fb7299;
+  --scrollbar-bg-hover: rgba(78, 146, 255, 0.6);
+  --github-primary-btn: #494949;
+  --github-primary-btn-hover: #3a3939;
+  user-select: none;
 }
 
 body {
-    margin: 0;
-    overflow: clip;
-    touch-action: none;
+  margin: 0;
+  overflow: clip;
+  touch-action: none;
 }
 
 @media screen and (max-width: 500px) {
-    body {
-        margin: 0 0 32px 0;
-    }
+  body {
+    margin: 0 0 32px 0;
+  }
 }
