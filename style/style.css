@@ -47,47 +47,81 @@
     overflow: auto;
 }
 
-/*滚动条里面轨道*/
-.container::-webkit-scrollbar-track {
-    background-color: unset;
-    height: 6px;
-    margin: 40px;
-    backdrop-filter: blur(8px);
+@media screen and (max-width: 500px) {
+    .container::-webkit-scrollbar-track {
+        background-color: unset;
+        height: 6px;
+        margin: 40px;
+        transition: all .25s ease-in-out;
+    }
+
+    .container::-webkit-scrollbar-track:hover {
+        background: var(--scrollbar-bg-hover);
+        height: 10px;
+        margin: 40px;
+        border-radius: 3px;
+    }
+
+    .container::-webkit-scrollbar {
+        height: 6px;
+        background-color: unset;
+    }
+
+    .container::-webkit-scrollbar-thumb {
+        height: 6px;
+        border-radius: 3px;
+        background: var(--scrollbar-bg);
+        transition: all .25s ease-in-out;
+    }
+
+    .container::-webkit-scrollbar-thumb:hover {
+        height: 10px;
+        border-radius: 3px;
+        background: var(--scrollbar-bg);
+    }
 }
 
-/*定义滚动条整体的样式*/
-.container::-webkit-scrollbar {
-    height: 6px;
-    background-color: unset;
+@media screen and (min-width: 500px) {
+    .container::-webkit-scrollbar-track {
+        background-color: unset;
+        height: 6px;
+        margin: 40px;
+    }
+
+    .container::-webkit-scrollbar {
+        height: 6px;
+        background-color: unset;
+    }
+
+    .container::-webkit-scrollbar-thumb {
+        height: 6px;
+        border-radius: 3px;
+        background: unset;
+    }
+
+    .container::-webkit-scrollbar-thumb:hover {
+        height: 6px;
+        border-radius: 3px;
+        background: unset;
+    }
 }
 
-/*滚动条的样式*/
-.container::-webkit-scrollbar-thumb {
-    height: 6px;
-    border-radius: 3px;
-    background: var(--scrollbar-bg);
-}
-
-.container::-webkit-scrollbar-thumb:hover {
-    height: 6px;
-    border-radius: 3px;
-    background: var(--scrollbar-bg-hover);
-}
 
 .card {
     background-color: var(--card-bg);
     opacity: 1;
     border-radius: 16px;
-    box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 32px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 24px;
     gap: 32px;
     width: 256px;
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    height: 224px;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 #content {
@@ -140,10 +174,21 @@ h3 {
     color: var(--font-color);
 }
 
+h3[aquatic-ui] {
+    font-family: CJS;
+    font-weight: normal;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 0;
+    color: var(--font-color);
+    width: 274px;
+}
+
 p {
     font-family: MiSans;
     font-weight: normal;
     font-size: 14px;
+    color: var(--font-color);
     opacity: 0.75;
     margin: 0;
 }
@@ -158,6 +203,10 @@ path#logo-passport {
 
 path#logo-skii {
     fill: #FE7800;
+}
+
+path#logo-github {
+    fill: var(--github-primary);
 }
 
 button[primary] {
@@ -202,6 +251,21 @@ button[secondary]:hover {
     font-weight: 500;
 }
 
+button[secondary-aquatic-ui] {
+    background-color: var(--btn-sec-bg);
+    border-radius: 6px;
+    border: none;
+    color: var(--font-color);
+    font-family: MiSans;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-width: 96px;
+    width: 100%;
+}
+
 button[primary-skii] {
     background-color: #FE7800;
     border-radius: 6px;
@@ -221,6 +285,99 @@ button[primary-skii] {
 button[primary-skii]:hover {
     background-color: var(--skii-primary-hover);
     font-weight: 500;
+}
+
+button[primary-bili] {
+    background-color: #FB7299;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    font-family: MiSans;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-width: 96px;
+    width: 100%;
+    transition: all .25s ease-in-out;
+}
+
+button[primary-bili]:hover {
+    background-color: var(--bili-primary-hover);
+    font-weight: 500;
+}
+
+button[primary-wanwen] {
+    background-color: #FFBB54;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    font-family: MiSans;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-width: 96px;
+    width: 100%;
+    transition: all .25s ease-in-out;
+}
+
+button[primary-wanwen]:hover {
+    background-color: var(--wanwen-primary-hover);
+    font-weight: 500;
+}
+
+button[primary-github] {
+    background-color: var(--github-primary-btn);
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    font-family: MiSans;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-width: 96px;
+    width: 100%;
+    transition: all .25s ease-in-out;
+}
+
+button[primary-github]:hover {
+    background-color: var(--github-primary-btn-hover);
+    font-weight: 500;
+}
+
+.qrcode {
+    /* transform: scale(1,0); */
+    position: fixed;
+    transition: all .25s ease-in-out;
+    padding: 24px;
+    background-color: var(--card-bg-hover);
+    opacity: 0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    width: 208px;
+    height: 224px;
+    top: 0px;
+    color: var(--font-color);
+
+    img {
+        border-radius: 4px;
+    }
+}
+
+.qrcode:hover {
+    /* transform: scale(1,1); */
+    opacity: 1;
+    top: 0px;
 }
 
 .buttonbox {
