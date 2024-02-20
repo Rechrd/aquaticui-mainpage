@@ -1,0 +1,41 @@
+@font-face {
+    font-family: CJSBold;
+    src: url(./fonts/ChillJinshuSongBold.woff);
+}
+
+@font-face {
+    font-family: CJSLight;
+    src: url(./fonts/ChillJinshuSongLight.woff);
+}
+
+@font-face {
+    font-family: CJSMedium;
+    src: url(./fonts/ChillJinshuSongMedium.woff);
+}
+
+@font-face {
+    font-family: CJS;
+    src: url(./fonts/ChillJinshuSongRegular.woff);
+}
+
+@font-face {
+    font-family: MiSans;
+    src: url(./fonts/MiSans.ttf);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        background-color: #091220;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        background-color: #F2F4FA;
+    }
+}
+
+body {
+    margin: 0;
+    overflow: clip;
+}
