@@ -23,8 +23,6 @@
         --wanwen-primary-hover: #e4a546;
         --github-primary: #FFFFFF;
         --github-primary-hover: #ccced3;
-        --github-primary-btn: #494949;
-        --github-primary-btn-hover: #3a3939;
         --card-bg: rgba(26, 27, 28, 0.9);
         --card-bg-hover: rgb(26, 27, 28);
         --scrollbar-bg: rgba(255, 255, 255, 0.5);
@@ -44,8 +42,6 @@
         --wanwen-primary-hover: #ffd493;
         --github-primary: #211D1F;
         --github-primary-hover: #4A4849;
-        --github-primary-btn: #FFFFFF;
-        --github-primary-btn-hover: #ccced3;
         --card-bg: rgba(255, 255, 255, 0.9);
         --card-bg-hover: rgb(255, 255, 255);
         --font-color: #1d1d1d;
@@ -59,6 +55,8 @@
     --theme-primary: #4E92FF;
     --bili-primary: #FB7299;
     --scrollbar-bg-hover: rgba(78, 146, 255, 0.6);
+    --github-primary-btn: #494949;
+    --github-primary-btn-hover: #3a3939;
     user-select: none;
 }
 
