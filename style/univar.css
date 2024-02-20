@@ -22,10 +22,10 @@
     --theme-primary-hover: #4181e7;
     --skii-primary-hover: #df6800;
     --bili-primary-hover: #dd6285;
-    --wanwen-primary-hover: #e4a546;
+    --wonderfile-primary-hover: #e4a546;
     --github-primary: #ffffff;
     --github-primary-hover: #ccced3;
-    --card-bg: rgba(26, 27, 28, 0.9);
+    --card-bg: rgba(26, 27, 28, 0.7);
     --card-bg-hover: rgb(26, 27, 28);
     --scrollbar-bg: rgba(255, 255, 255, 0.5);
     --font-color: #ffffff;
@@ -41,10 +41,10 @@
     --theme-primary-hover: #75aaff;
     --skii-primary-hover: #ffa657;
     --bili-primary-hover: #ff92b1;
-    --wanwen-primary-hover: #ffd493;
+    --wonderfile-primary-hover: #ffd493;
     --github-primary: #211d1f;
     --github-primary-hover: #4a4849;
-    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-bg: rgba(255, 255, 255, 0.3);
     --card-bg-hover: rgb(255, 255, 255);
     --font-color: #1d1d1d;
     --btn-sec-bg: rgba(0, 0, 0, 0.15);
