@@ -36,20 +36,99 @@
     padding: 32px;
 }
 
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    gap: 24px;
+    padding: 40px;
+    align-items: center;
+    overflow: auto;
+}
+
+/*滚动条里面轨道*/
+.container::-webkit-scrollbar-track {
+    background-color: unset;
+    height: 6px;
+    margin: 40px;
+    backdrop-filter: blur(8px);
+}
+
+/*定义滚动条整体的样式*/
+.container::-webkit-scrollbar {
+    height: 6px;
+    background-color: unset;
+}
+
+/*滚动条的样式*/
+.container::-webkit-scrollbar-thumb {
+    height: 6px;
+    border-radius: 3px;
+    background: var(--scrollbar-bg);
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    height: 6px;
+    border-radius: 3px;
+    background: var(--scrollbar-bg-hover);
+}
+
+.card {
+    background-color: var(--card-bg);
+    opacity: 1;
+    border-radius: 16px;
+    box-shadow: 0px 2px 48px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 32px;
+    width: 256px;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 18px;
+}
+
+.card-title {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 8px;
+}
+
 h1 {
     font-family: CJSBold;
     font-weight: normal;
     font-size: 36px;
     letter-spacing: 2px;
     margin: 0;
+    color: var(--font-color);
 }
 
 h2 {
-    font-family: CJSMedium;
+    font-family: CJSBold;
     font-weight: normal;
     font-size: 24px;
     letter-spacing: 1px;
     margin: 0;
+    color: var(--font-color);
 }
 
 h3 {
@@ -58,6 +137,7 @@ h3 {
     font-size: 24px;
     letter-spacing: 1px;
     margin: 0;
+    color: var(--font-color);
 }
 
 p {
@@ -69,5 +149,84 @@ p {
 }
 
 path#logo {
-    fill: #4E92FF;
+    fill: var(--theme-primary);
+}
+
+path#logo-passport {
+    fill: var(--theme-primary)
+}
+
+path#logo-skii {
+    fill: #FE7800;
+}
+
+button[primary] {
+    background-color: var(--theme-primary);
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    font-family: MiSans;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-width: 96px;
+    width: 100%;
+    transition: all .25s ease-in-out;
+}
+
+button[primary]:hover {
+    background-color: var(--theme-primary-hover);
+    font-weight: 500;
+}
+
+button[secondary] {
+    background-color: var(--btn-sec-bg);
+    border-radius: 6px;
+    border: none;
+    color: var(--font-color);
+    font-family: MiSans;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-width: 96px;
+    width: 100%;
+    transition: all .25s ease-in-out;
+}
+
+button[secondary]:hover {
+    background-color: var(--btn-sec-hover-bg);
+    font-weight: 500;
+}
+
+button[primary-skii] {
+    background-color: #FE7800;
+    border-radius: 6px;
+    border: none;
+    color: #FFFFFF;
+    font-family: MiSans;
+    font-weight: 350;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    min-width: 96px;
+    width: 100%;
+    transition: all .25s ease-in-out;
+}
+
+button[primary-skii]:hover {
+    background-color: var(--skii-primary-hover);
+    font-weight: 500;
+}
+
+.buttonbox {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 256px;
 }

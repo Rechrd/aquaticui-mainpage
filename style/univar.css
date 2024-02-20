@@ -4,16 +4,6 @@
 }
 
 @font-face {
-    font-family: CJSLight;
-    src: url(./fonts/ChillJinshuSongLight.woff);
-}
-
-@font-face {
-    font-family: CJSMedium;
-    src: url(./fonts/ChillJinshuSongMedium.woff);
-}
-
-@font-face {
     font-family: CJS;
     src: url(./fonts/ChillJinshuSongRegular.woff);
 }
@@ -26,16 +16,39 @@
 @media (prefers-color-scheme: dark) {
     :root {
         background-color: #091220;
+
+        --theme-primary-hover: #4181e7;
+        --skii-primary-hover: #df6800;
+        --card-bg: rgba(26, 27, 28, 0.9);
+        --scrollbar-bg: rgba(255, 255, 255, 0.5);
+        --font-color: #FFFFFF;
+        --btn-sec-bg: rgba(255, 255, 255, 0.25);
+        --btn-sec-hover-bg: rgba(255, 255, 255, 0.3);
     }
 }
 
 @media (prefers-color-scheme: light) {
     :root {
         background-color: #F2F4FA;
+
+        --theme-primary-hover: #75aaff;
+        --skii-primary-hover: #ffa657;
+        --card-bg: rgba(255, 255, 255, 0.9);
+        --font-color: #1d1d1d;
+        --btn-sec-bg: rgba(0, 0, 0, 0.15);
+        --btn-sec-hover-bg: rgba(0, 0, 0, 0.2);
+        --scrollbar-bg: rgba(26, 27, 28, 0.6);
     }
+}
+
+:root {
+    --theme-primary: #4E92FF;
+    --scrollbar-bg-hover: rgba(78, 146, 255, 0.6);
+    user-select: none;
 }
 
 body {
     margin: 0;
     overflow: clip;
+    touch-action: none;
 }
