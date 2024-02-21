@@ -233,9 +233,9 @@ button[secondary-wechat] {
 button {
   border-radius: 6px;
   border: none;
-  color: var(--font-color);
-  font-family: MiSans;
-  font-weight: 350;
+  color: #FFFFFF;
+  font-family: 'Figtree', 'Noto Sans SC', system-ui;
+  font-weight: 300;
   display: flex;
   justify-content: center;
   align-items: center;
