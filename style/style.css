@@ -32,8 +32,7 @@
   box-sizing: border-box;
   align-items: center;
   justify-content: center;
-  gap: 24px;
-  padding: 0 0 32px 0;
+  gap: 36px;
 }
 
 .container {
@@ -60,61 +59,22 @@
 }
 
 @media screen and (max-width: 500px) {
-  .container::-webkit-scrollbar-track {
-    background-color: unset;
-    height: 6px;
-    margin: 40px;
-    transition: all 0.25s ease-in-out;
+  .container {
+    scroll-snap-type: x mandatory;
   }
 
-  .container::-webkit-scrollbar-track:hover {
-    background: var(--scrollbar-bg-hover);
-    height: 10px;
-    margin: 40px;
-    border-radius: 3px;
-  }
-
-  .container::-webkit-scrollbar {
-    height: 6px;
-    background-color: unset;
-  }
-
-  .container::-webkit-scrollbar-thumb {
-    height: 6px;
-    border-radius: 3px;
-    background: var(--scrollbar-bg);
-    transition: all 0.25s ease-in-out;
-  }
-
-  .container::-webkit-scrollbar-thumb:hover {
-    height: 10px;
-    border-radius: 3px;
-    background: var(--scrollbar-bg);
+  .card {
+    scroll-snap-align: center;
   }
 }
 
 @media screen and (min-width: 500px) {
-  .container::-webkit-scrollbar-track {
-    background-color: unset;
-    height: 6px;
-    margin: 40px;
+  .container {
+    scroll-snap-type: none;
   }
 
-  .container::-webkit-scrollbar {
-    height: 6px;
-    background-color: unset;
-  }
-
-  .container::-webkit-scrollbar-thumb {
-    height: 6px;
-    border-radius: 3px;
-    background: unset;
-  }
-
-  .container::-webkit-scrollbar-thumb:hover {
-    height: 6px;
-    border-radius: 3px;
-    background: unset;
+  .card {
+    scroll-snap-align: none;
   }
 }
 
@@ -128,7 +88,6 @@
   justify-content: space-between;
   align-items: flex-start;
   padding: 24px;
-  gap: 32px;
   width: 256px;
   height: 224px;
   backdrop-filter: blur(12px);
@@ -158,52 +117,6 @@
   gap: 4px;
 }
 
-h1 {
-  font-family: CJSBold;
-  font-weight: normal;
-  font-size: 36px;
-  letter-spacing: 2px;
-  margin: 0;
-  color: var(--font-color);
-}
-
-h2 {
-  font-family: CJSBold;
-  font-weight: normal;
-  font-size: 24px;
-  letter-spacing: 1px;
-  margin: 0;
-  color: var(--font-color);
-}
-
-h3 {
-  font-family: CJS;
-  font-weight: normal;
-  font-size: 24px;
-  letter-spacing: 1px;
-  margin: 0;
-  color: var(--font-color);
-}
-
-h3[aquatic-ui] {
-  font-family: CJS;
-  font-weight: normal;
-  font-size: 24px;
-  letter-spacing: 1px;
-  margin: 0;
-  color: var(--font-color);
-  width: 274px;
-}
-
-p {
-  font-family: MiSans;
-  font-weight: normal;
-  font-size: 14px;
-  color: var(--font-color);
-  opacity: 0.75;
-  margin: 0;
-}
-
 path#logo {
   fill: var(--theme-primary);
 }
@@ -220,24 +133,12 @@ path#logo-github {
   fill: var(--github-primary);
 }
 
-button {
-  cursor: pointer;
+path#fonts {
+  fill: var(--font-color);
 }
 
 button[primary] {
   background-color: var(--theme-primary);
-  border-radius: 6px;
-  border: none;
-  color: #ffffff;
-  font-family: MiSans;
-  font-weight: 350;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  min-width: 96px;
-  width: 100%;
-  transition: all 0.25s ease-in-out;
 }
 
 button[primary]:hover {
@@ -247,18 +148,6 @@ button[primary]:hover {
 
 button[secondary] {
   background-color: var(--btn-sec-bg);
-  border-radius: 6px;
-  border: none;
-  color: var(--font-color);
-  font-family: MiSans;
-  font-weight: 350;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  min-width: 96px;
-  width: 100%;
-  transition: all 0.25s ease-in-out;
 }
 
 button[secondary]:hover {
@@ -268,33 +157,11 @@ button[secondary]:hover {
 
 button[secondary-aquatic-ui] {
   background-color: var(--btn-sec-bg);
-  border-radius: 6px;
-  border: none;
-  color: var(--font-color);
-  font-family: MiSans;
-  font-weight: 350;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  min-width: 96px;
-  width: 100%;
 }
 
 button[primary-skii] {
   background-color: #fe7800;
-  border-radius: 6px;
-  border: none;
-  color: #ffffff;
-  font-family: MiSans;
-  font-weight: 350;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  min-width: 96px;
-  width: 100%;
-  transition: all 0.25s ease-in-out;
+  margin-bottom: -4px;
 }
 
 button[primary-skii]:hover {
@@ -304,18 +171,6 @@ button[primary-skii]:hover {
 
 button[primary-bili] {
   background-color: #fb7299;
-  border-radius: 6px;
-  border: none;
-  color: #ffffff;
-  font-family: MiSans;
-  font-weight: 350;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  min-width: 96px;
-  width: 100%;
-  transition: all 0.25s ease-in-out;
 }
 
 button[primary-bili]:hover {
@@ -324,19 +179,8 @@ button[primary-bili]:hover {
 }
 
 button[primary-wonderfile] {
-  background-color: #ffbb54;
-  border-radius: 6px;
-  border: none;
-  color: #ffffff;
-  font-family: MiSans;
-  font-weight: 350;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  min-width: 96px;
-  width: 100%;
-  transition: all 0.25s ease-in-out;
+  background-color: #fcb03e;
+  margin-bottom: -4px;
 }
 
 button[primary-wonderfile]:hover {
@@ -346,18 +190,7 @@ button[primary-wonderfile]:hover {
 
 button[primary-github] {
   background-color: var(--github-primary-btn);
-  border-radius: 6px;
-  border: none;
-  color: #ffffff;
-  font-family: MiSans;
-  font-weight: 350;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 12px;
-  min-width: 96px;
-  width: 100%;
-  transition: all 0.25s ease-in-out;
+  margin-bottom: -4px;
 }
 
 button[primary-github]:hover {
@@ -383,11 +216,33 @@ button[primary-github]:hover {
   height: 224px;
   top: 0;
   left: 0;
+  font-size: 13px;
   color: var(--font-color);
 
   img {
-    border-radius: 4px;
+    border-radius: 6px;
+    padding: 8px;
+    background-color: #FFFFFF;
   }
+}
+
+button[secondary-wechat] {
+  background-color: var(--btn-sec-bg);
+}
+
+button {
+  border-radius: 6px;
+  border: none;
+  color: var(--font-color);
+  font-family: MiSans;
+  font-weight: 350;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  min-width: 96px;
+  width: 100%;
+  cursor: pointer;
 }
 
 .qrcode:hover,
