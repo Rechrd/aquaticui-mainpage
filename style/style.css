@@ -11,7 +11,7 @@
       width: 150%;
     }
   }
-  
+
   .circle {
     height: 100vh;
     width: 50%;
@@ -38,7 +38,7 @@
       width: 100%;
     }
   }
-  
+
   .circle {
     height: 100vh;
     width: 45%;
@@ -192,12 +192,21 @@ button[secondary]:hover {
   background-color: var(--btn-sec-hover-bg);
 }
 
-button[secondary-aquatic-ui] {
+button[secondary-aquatic-ui]:disabled {
   border: 1px solid var(--btn-sec-bg);
   color: var(--font-color);
   background-color: unset;
   font-weight: var(--font-weight);
+  cursor: default;
 }
+
+button[secondary-wechat]:disabled {
+  border: 1px solid var(--btn-sec-bg);
+  color: var(--font-color);
+  background-color: unset;
+  cursor: default;
+}
+
 
 button[primary-skii] {
   background-color: #fe7800;
@@ -254,6 +263,7 @@ button[primary-github]:hover {
   left: 0;
   color: var(--font-color);
   font-size: 13px;
+  font-family: 'Figtree', 'Noto Sans SC', system-ui;
   font-weight: var(--font-weight);
 
   img {
@@ -261,12 +271,6 @@ button[primary-github]:hover {
     padding: 8px;
     background-color: #FFFFFF;
   }
-}
-
-button[secondary-wechat] {
-  border: 1px solid var(--btn-sec-bg);
-  color: var(--font-color);
-  background-color: unset;
 }
 
 button {

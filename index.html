@@ -102,7 +102,7 @@
                         </g>
                     </svg>
                 </div>
-                <button secondary-aquatic-ui>暂不可用</button>
+                <button secondary-aquatic-ui disabled>暂不可用</button>
             </div>
             <div class="card" id="wonderfile">
                 <div class="card-content">
@@ -148,38 +148,24 @@
                     </svg>
                 </div>
                 <div class="buttonbox">
-                    <button secondary-wechat>
+                    <button secondary-wechat disabled>
                         <script>
                             if (navigator.userAgent.match(/Mobile/i)) {
-
-                                // 移动设备
-
                                 document.write("轻点查看二维码");
-
                             } else {
-
-                                // PC 设备
-
                                 document.write("鼠标悬停查看二维码");
-
                             }
                         </script>
                     </button>
                     <div class="qrcode">
-                        <img src="./source/wechat-qr.jpg" width="128">
+                        <a href="./source/wechat-qr.jpg" download="">
+                            <img src="./source/wechat-qr.jpg" width="128">
+                        </a>
                         <script>
                             if (navigator.userAgent.match(/Mobile/i)) {
-
-                                // 移动设备
-
-                                document.write("长按二维码保存后到微信 App 扫码");
-
+                                document.write("轻点二维码保存后到微信 App 扫码");
                             } else {
-
-                                // PC 设备
-
                                 document.write("使用手机微信 App 扫描二维码");
-
                             }
                         </script>
                     </div>
