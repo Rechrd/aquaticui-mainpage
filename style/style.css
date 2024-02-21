@@ -143,20 +143,23 @@ button[primary] {
 
 button[primary]:hover {
   background-color: var(--theme-primary-hover);
-  font-weight: 500;
 }
 
 button[secondary] {
   background-color: var(--btn-sec-bg);
+  color: var(--font-color);
+  font-weight: var(--font-weight);
 }
 
 button[secondary]:hover {
   background-color: var(--btn-sec-hover-bg);
-  font-weight: 500;
 }
 
 button[secondary-aquatic-ui] {
-  background-color: var(--btn-sec-bg);
+  border: 1px solid var(--btn-sec-bg);
+  color: var(--font-color);
+  background-color: unset;
+  font-weight: var(--font-weight);
 }
 
 button[primary-skii] {
@@ -166,7 +169,6 @@ button[primary-skii] {
 
 button[primary-skii]:hover {
   background-color: var(--skii-primary-hover);
-  font-weight: 500;
 }
 
 button[primary-bili] {
@@ -175,7 +177,6 @@ button[primary-bili] {
 
 button[primary-bili]:hover {
   background-color: var(--bili-primary-hover);
-  font-weight: 500;
 }
 
 button[primary-wonderfile] {
@@ -185,7 +186,6 @@ button[primary-wonderfile] {
 
 button[primary-wonderfile]:hover {
   background-color: var(--wonderfile-primary-hover);
-  font-weight: 500;
 }
 
 button[primary-github] {
@@ -195,7 +195,6 @@ button[primary-github] {
 
 button[primary-github]:hover {
   background-color: var(--github-primary-btn-hover);
-  font-weight: 500;
 }
 
 .qrcode {
@@ -216,8 +215,9 @@ button[primary-github]:hover {
   height: 224px;
   top: 0;
   left: 0;
-  font-size: 13px;
   color: var(--font-color);
+  font-size: 13px;
+  font-weight: var(--font-weight);
 
   img {
     border-radius: 6px;
@@ -227,7 +227,9 @@ button[primary-github]:hover {
 }
 
 button[secondary-wechat] {
-  background-color: var(--btn-sec-bg);
+  border: 1px solid var(--btn-sec-bg);
+  color: var(--font-color);
+  background-color: unset;
 }
 
 button {
@@ -243,6 +245,7 @@ button {
   min-width: 96px;
   width: 100%;
   cursor: pointer;
+  font-weight: var(--font-weight);
 }
 
 .qrcode:hover,
